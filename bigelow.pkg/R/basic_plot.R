@@ -1,4 +1,4 @@
-#'View your data in a scatterplot using geom_jitter to compare variances.
+#'Create a scatterplot to view your data using geom_jitter to compare variances.
 #'
 #'Use a scatterplot to view your data before performing analyses. Will also save a copy of the plot.
 #'@param data The dataset you read in (dataframe)

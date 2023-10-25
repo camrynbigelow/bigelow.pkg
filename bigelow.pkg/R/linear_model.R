@@ -5,6 +5,8 @@
 #'@param y dependent value
 #'@param data The dataset you read in (dataframe)
 #'@return summary The summary of your linear model regression.
+#'
+#'@export
 
 linear_model<- function(x, y, data){
   model_fit<-lm({{y}}~{{x}}, data) %>% 

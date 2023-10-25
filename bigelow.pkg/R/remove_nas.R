@@ -10,5 +10,5 @@
 
 remove_nas<-function(data){
   clean<-na.omit(data)
-  return<-clean
+  return(clean)
 }

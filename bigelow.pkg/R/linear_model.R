@@ -9,7 +9,7 @@
 linear_model<- function(x, y, data){
   model_fit<-lm({{y}}~{{x}}, data) %>% 
     summary<-summary(model_fit)
-    return<-summary
+    return(summary)
 }
 
 linear_model(data=surveys, x=sex, y=weight)

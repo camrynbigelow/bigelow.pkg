@@ -5,6 +5,8 @@
 #'@param x The independent variable
 #'@param y The dependent variable
 #'@return myplot Scatter plot
+#' 
+#'@export
 
 basic_plot<-function(data, x, y){
   myplot<-ggplot(data, aes({{x}}, {{y}}, color={{x}}))+geom_point()+geom_jitter()

@@ -5,6 +5,8 @@
 #'@param x The independent variable
 #'@param y The dependent variable
 #'@return summary The ANOVA summary
+#'
+#'@export
 
 my_anova<-function(data, x, y){
   model_fit<-lm({{y}}~{{x}}, data)

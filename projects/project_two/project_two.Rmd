@@ -26,6 +26,8 @@ summary(model_fit)
 Does the summary make sense when you compare it to the plot you made? Does our model have good predictive power? Evaluate the residual standard error, intercept, and R-Squared in particular. Would you say your predictor predicts the response? (10 pts)
 # Yes, the summary makes sense. No, our model does not have good predictive power. The intercept is around 19.098 which is reasonable looking at the plot, but it has std. error of 0.579. Plus, the SL Pr(>|t|) is 0.3 which is not significant. The residual standard error is 0.8396 which is pretty high and the R-squared values are extremely low (0.02686 and 0.002534). I would say the predictor, standard length does not predict the response total length.
 
+# AMW: That might be the worst R-squared I've ever seen. It's like ... anti-predictive.
+
 Plot the model on the graph. Increase the size of the text so it is comfortably readable at 5 feet. Make sure axis labels are readable and not overlapping with one another. (5 pts)
 ```{r}
 GM_plot1<-ggplot(GM, aes(x=SL, y=TV))+geom_point(size=0.5)+theme(text=element_text(size=15))

@@ -1,4 +1,3 @@
-
 #' Clean your data by removing NAs
 #' 
 #' Use your data that you read in to clean data

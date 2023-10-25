@@ -1,6 +1,7 @@
 #'Show rank abundance by plotting your data in descending order by phylum
 #'
 #'Use your data that you read in and the phylogenetic rank you want to count.
+#'
 #'@param data The dataset you read in (dataframe)
 #'@param x The rank of organisms you want to count. Default is phylum. (category)
 #'@param xlabel Name of x-axis label, should be the same as x (String)

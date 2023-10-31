@@ -14,9 +14,10 @@ linear_model<- function(x, y, data){
     return(summary)
 }
 
-linear_model(data=surveys, x=sex, y=weight)
+#linear_model(data=surveys, x=sex, y=weight)
 #^ object not found
 
-model_fit<-lm(CPD~Sex, data=GM)
-summary(model_fit)
+#model_fit<-lm(CPD~Sex, data=GM)
+
+#summary(model_fit)
 

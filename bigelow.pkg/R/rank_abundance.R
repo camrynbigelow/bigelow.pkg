@@ -18,11 +18,11 @@ rank_abundance<-function(data, x, xlabel){
   return(rank_plot)
 }
 
-This function works!!
-sorted<-surveys %>% 
-  count (genus) %>% 
-  arrange(desc(n))
-rank_plot<-ggplot(data=sorted, mapping=aes(x= fct_reorder(genus,n, desc), y = n))+geom_col()
-rank_plot<-rank_plot+labs(x="Genus", y="Count")
+#This function works!!
+#sorted<-surveys %>% 
+#  count (genus) %>% 
+#  arrange(desc(n))
+#rank_plot<-ggplot(data=sorted, mapping=aes(x= fct_reorder(genus,n, desc), y = n))+geom_col()
+#rank_plot<-rank_plot+labs(x="Genus", y="Count")
 
 

@@ -10,17 +10,17 @@
 #'@export
 
 rank_abundance<-function(data, x, xlabel){
-  sorted<-data %>% 
-    count ({{x}}) %>% 
-    arrange(desc(n))
-  rank_plot<-ggplot(data=sorted, mapping=aes(x= fct_reorder({{x}},n, desc), y = n))+geom_col()
-  rank_plot<-rank_plot+labs(x=xlabel, y="Count", title="Rank Abundance")
+ sorted<-data %>% 
+  count ({{x}}) %>% 
+  arrange(desc(n))
+ rank_plot<-ggplot(data=sorted, mapping=aes(x= fct_reorder({{x}},n, desc), y = n))+geom_col()
+ rank_plot<-rank_plot+labs(x=xlabel, y="Count", title="Rank Abundance")
   return(rank_plot)
 }
 
 #This function works!!
 #sorted<-surveys %>% 
-#  count (genus) %>% 
+ # count (genus) %>% 
 #  arrange(desc(n))
 #rank_plot<-ggplot(data=sorted, mapping=aes(x= fct_reorder(genus,n, desc), y = n))+geom_col()
 #rank_plot<-rank_plot+labs(x="Genus", y="Count")
